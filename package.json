@@ -1,0 +1,22 @@
+{
+    "name": "svelte-alias-test",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "rollup -c",
+        "autobuild": "rollup -c -w",
+        "dev": "concurrently \"npm run start:dev\" \"npm run autobuild\"",
+        "start": "sirv dist",
+        "start:dev": "sirv dist --dev"
+    },
+    "devDependencies": {
+        "concurrently": "latest",
+        "rollup": "latest",
+        "rollup-plugin-commonjs": "latest",
+        "rollup-plugin-import-resolver": "latest",
+        "rollup-plugin-node-resolve": "latest",
+        "rollup-plugin-svelte": "latest",
+        "rollup-plugin-terser": "latest",
+        "svelte": "latest",
+        "sirv-cli": "latest"
+    }
+}
